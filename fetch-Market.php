@@ -10,8 +10,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$OrdID=intval($_POST["fname"]);
-$sql = "SELECT fname,State,Acres,crops,Loan,Subsidary FROM farmerdetails WHERE State=$OrdID";
+$OrdID=intval($_POST["cname"]);
+$sql = "SELECT fname,State,Market,crops FROM sellMarket WHERE crops=$OrdID";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

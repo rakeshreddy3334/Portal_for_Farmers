@@ -10,17 +10,15 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$Farmername=$_POST["Id1"];
-$State=($_POST["Id2"]);
-$Acres=intval($_POST["Id3"]);
+$Farmername=$_POST["name1"];
+$State=$_POST["Id2"];
+$Market=$_POST["Id3"];
 $crops=$_POST["Id4"];
-$Loan=$_POST["Id5"];
-$Subs=$_POST["Id6"];
 
-$sql = "INSERT INTO farmerdetails VALUES('$Farmername','$State','$Acres','$crops','$Loan','$Subs')";
+$sql = "INSERT INTO sellMarket VALUES('$Farmername','$State','$Market','$crops')";
 if ($conn->query($sql) === TRUE) {
     ?> 
-    <h1 align="center">Thank you for Registration</h1>
+    <h1 align="center">Thank you for shopping with us</h1>
     <p>click here to go home </p> <a href = "index.html">HOME</a>
     <?php
 } else {
