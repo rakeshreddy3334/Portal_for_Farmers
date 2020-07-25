@@ -1,17 +1,42 @@
-<html>
-  <head>
-   <title>Portal:Discussion Forum</title>
-   </head>
-   <body>
-   <h1>Discussion Forum</h1>
-   <form method=post action="...">
-        <p><strong>Your E-Mail Address:</strong><br>
-        <input type="text" name="topic_owner" size=40 maxlength=150>
-        <p><strong>Give your thoughts a Title</strong><br>
-        <input type="text" name="topic_title" size=40 maxlength=150>
-        <P><strong>Description of your thoughts</strong><br>
-        <textarea name="post_text" rows=8 cols=40 wrap=virtual></textarea>
-        <P><input type="submit" name="submit" value="Submit"></p>
-  </form>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="slider">
+            <img src="pic4.jpg" id="slideimg">
+        </div>
+        <div class="overlay">
+            <div>
+                <ul class="main-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li><a href="DiscussionForum.html">Forum</a></li>
+
+                </ul>
+            </div>
+            <div class="discuss">
+                <form method=post action="...">
+                    <label for="fname"><strong>E-Mail Address:</strong> </label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname"><strong>Give your thoughts a Title:</strong></label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                     <label><strong>Description of your thoughts</strong></label><br> 
+                    <textarea name="post_text" rows=8 cols=40 wrap=virtual></textarea>
+                    <P><input type="submit" name="submit" value="Submit"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
