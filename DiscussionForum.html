@@ -11,7 +11,7 @@
 <body>
     <div class="banner">
         <div class="slider">
-            <img src="pic3.jpg" id="slideimg">
+            <img src="pic4.jpg" id="slideimg">
         </div>
         <div class="overlay">
             <div>
@@ -24,26 +24,27 @@
 
                 </ul>
             </div>
-            <div>
-                <h1>Some of the topics</h1>
-                <li>
-                    New Technology In Agriculture - Solar Agricultural Technology
-                    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwizi8DsjenqAhVJDisKHdOECzgYABAAGgJzZg&ohost=www.google.com&cid=CAESQeD2hqGeOIdoSmaLt6Xn_7-4RTKD04NPzVgXoWOZxZ7A3tiQJ30MQ0rOhAHjgWNtAARseg8R1Mlq6LPKgJywJMb6&sig=AOD64_0TvTij7HOc3TO1IDGIcvsMrxIHxg&q&adurl&ved=2ahUKEwjKyLjsjenqAhXR7HMBHYHmC8AQ0Qx6BAgREAE">click this for more info</a>
-                </li>
-            </div>
             <div class="discuss">
-                <form method=post action="...">
+                <form  method=post action="connect.php"  >    
+                    <div>
+                        <h2>Some of the topics</h2>
+                        <li>
+                            New Technology In Agriculture - Solar Agricultural Technology
+                            <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwizi8DsjenqAhVJDisKHdOECzgYABAAGgJzZg&ohost=www.google.com&cid=CAESQeD2hqGeOIdoSmaLt6Xn_7-4RTKD04NPzVgXoWOZxZ7A3tiQJ30MQ0rOhAHjgWNtAARseg8R1Mlq6LPKgJywJMb6&sig=AOD64_0TvTij7HOc3TO1IDGIcvsMrxIHxg&q&adurl&ved=2ahUKEwjKyLjsjenqAhXR7HMBHYHmC8AQ0Qx6BAgREAE">click this for more info</a>
+                        </li>
+                    </div>
                     <label for="fname"><strong>E-Mail Address:</strong> </label><br>
                     <input type="text" id="fname" name="fname"><br>
                     <label for="lname"><strong>Give your thoughts a Title:</strong></label><br>
                     <input type="text" id="lname" name="lname"><br>
                      <label><strong>Description of your thoughts</strong></label><br> 
-                    <textarea name="post_text" rows=8 cols=40 wrap=virtual></textarea>
-                    <P><input type="submit" name="submit" value="Submit"></p>
+                    <textarea name="post_text" rows=8 cols=40 wrap=virtual id="t1"></textarea>
+                    <P><input type="submit" name="submit" value="save data" onclick="getdata()"></p>
                 </form>
             </div>
         </div>
     </div>
+  
 </body>
 
 </html>
