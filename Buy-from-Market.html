@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market-Buy</title>
+     <link href="styles.css" rel="stylesheet" type="text/css"> 
+</head>
+
+<body>
+    <div class="banner">
+        <div class="slider">
+            <img src="pic4.jpg" id="slideimg">
+        </div>
+        <div class="overlay">
+            <div>
+                <ul class="main-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li><a href="Details.html">Details</a></li>
+                    <li><a href="Trade.html">Trading</a>
+                    
+                    </li>
+                    
+                    <li><a href="DiscussionForum.html">Forum</a></li>
+
+                </ul>
+            </div>
+
+            <div>
+                <h2>crops are available </h2>
+            </div>
+            <div>
+                <form action="fetch-Market.php" method=post>
+                    <p>Enter the crop you want to buy</p>
+                    <label for ="cname">Crop name</label><br>
+                    <input type=text name="cname"><br>
+                    <input type=submit value="click to view">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

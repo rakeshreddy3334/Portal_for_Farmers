@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market-Buy</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="slider">
+            <img src="pic4.jpg" id="slideimg">
+        </div>
+        <div class="overlay">
+            <div>
+                <ul class="main-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li><a href="Details.html">Details</a></li>
+                    <li><a href="Trade.html">Trading</a>
+                    
+                    </li>
+                   
+                    <li><a href="DiscussionForum.html">Forum</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <h2>Want to Sell your Crops</h2>
+                <p>Please fill the below details to sell your crop in the market</p>
+                <form action="insert-sell.php" method="POST">
+                   
+                             <label for="name1">Your Name: </label>      <br>
+                           
+                            <td><input type="text" name="name1"></td><br>
+                        
+                        
+                            
+                             <label for="Id2">  Enter your state</label><br>
+                          
+                            <input type="text" name="Id2"><br>
+                            
+                        
+                               <label for="Id3">Enter your preferdered Market place</label><br>
+                     
+                            <input type="text" name="Id3">
+                            <br>
+                       
+                           <label for="Id4"> Enter Crop</label><br>
+                            
+                            <input type="text" name="Id4"><br>
+                            
+                            <input type="submit" name="submit" value="Sell Crop" >
+                        
+                          
+            </div>
+        </div>
+    </div>
+    </form>
+</body>

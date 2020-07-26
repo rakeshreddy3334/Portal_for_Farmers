@@ -1,0 +1,16 @@
+
+.two-coloumn-wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.img-wrapper{
+
+    width: 100%;
+}
+.prof-wrapper{
+    padding: 30px;
+}
+.prof-wrapper h1{
+color: chocolate;
+}
