@@ -25,14 +25,24 @@
                 </ul>
             </div>
             <div class="discuss">
-                <form  method=post action="connect.php"  >    
+                <form  method=post action=""  >    
                     <div>
-                        <h2>Some of the topics</h2>
+                        <h2>DiscussionForum</h2>
                         <li>
-                            New Technology In Agriculture - Solar Agricultural Technology
+                            New Technology In Agriculture - Solar Agricultural Technology<br>
                             <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwizi8DsjenqAhVJDisKHdOECzgYABAAGgJzZg&ohost=www.google.com&cid=CAESQeD2hqGeOIdoSmaLt6Xn_7-4RTKD04NPzVgXoWOZxZ7A3tiQJ30MQ0rOhAHjgWNtAARseg8R1Mlq6LPKgJywJMb6&sig=AOD64_0TvTij7HOc3TO1IDGIcvsMrxIHxg&q&adurl&ved=2ahUKEwjKyLjsjenqAhXR7HMBHYHmC8AQ0Qx6BAgREAE">click this for more info</a>
                         </li>
+                        <li>
+                            Farmer Education<br>
+                            <a href="https://afribary.com/works/fields/education/sub-fields/agricultural-education">click this for more info</a>
+                        </li>
+                        <li>
+                            Agricultural Safety.<br>
+                            <a href="https://afribary.com/works/fields/education/sub-fields/agricultural-education">click this for more info</a>
+                        </li>
                     </div>
+                    <div>
+                    <p>If you want to discus,please fill in the below details</p>
                     <label for="fname"><strong>E-Mail Address:</strong> </label><br>
                     <input type="text" id="fname" name="fname"><br>
                     <label for="lname"><strong>Give your thoughts a Title:</strong></label><br>
@@ -40,10 +50,17 @@
                      <label><strong>Description of your thoughts</strong></label><br> 
                     <textarea name="post_text" rows=8 cols=40 wrap=virtual id="t1"></textarea>
                     <P><input type="submit" name="submit" value="save data" onclick="getdata()"></p>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        function getdata()
+        {
+            alert("Thanks for submitting")
+        }
+    </script>
   
 </body>
 
