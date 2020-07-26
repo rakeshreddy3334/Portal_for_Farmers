@@ -151,14 +151,9 @@ p{
     margin-top: 30px;
     font-weight: bolder;
     margin-bottom: 30px;
+    font-size: 13px;
 }
-td{
-    margin-left: 300px;
-}
-form
-{
-    align-content: center;
-}
+
 button
 {
     width: 200px;

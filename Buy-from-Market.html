@@ -5,19 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market-Buy</title>
-    <!-- <link href="styles.css" rel="stylesheet" type="text/css"> -->
+     <link href="styles.css" rel="stylesheet" type="text/css"> 
 </head>
-<body>
-    
-    <div>
-        <h1>This is area where we buy from the market</h1>
-    </div>
-    <div>
-        <form action= "fetch-Market.php" method = post>
-        <h1>Enter the crop you want to buy</h1>
-        Crop Name<input type = text name="cname"><br>
-        <input type = submit value ="click to view">
-    </div>
 
+<body>
+    <div class="banner">
+        <div class="slider">
+            <img src="pic4.jpg" id="slideimg">
+        </div>
+        <div class="overlay">
+            <div>
+                <ul class="main-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li><a href="">Details</a></li>
+                    <li><a href="trade.html">Trading</a>
+                    
+                    </li>
+                    <li><a href="">Info</a></li>
+                    <li><a href="DiscussionForum.html">Forum</a></li>
+
+                </ul>
+            </div>
+
+            <div>
+                <h2>crops are available </h2>
+            </div>
+            <div>
+                <form action="fetch-Market.php" method=post>
+                    <p>Enter the crop you want to buy</p>
+                    <label for ="cname">Crop name</label><br>
+                    <input type=text name="cname"><br>
+                    <input type=submit value="click to view">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
